@@ -4,14 +4,12 @@ npm install cors */
 
 /* -------------------
 npx nodemon index.js
-------------------- */
+------------------- 
+http://localhost:3001*/
 
 // Activation Packages et Middlewares
 const express = require("express");
 const app = express();
-/* const formidable = require("express-formidable");
-app.use(formidable());
-const mongoose = require("mongoose"); */
 
 // Autorise tous les sites à appeler votre API
 const cors = require("cors");
