@@ -16,7 +16,9 @@ const cors = require("cors");
 app.use(cors());
 
 app.get("/", (req, res) => {
-  return res.json({
+  res.json("hello");
+});
+/*   return res.json({
     restaurant: {
       path: "Le Pain Quotidien",
       name: "Le Pain Quotidien - Montorgueil",
@@ -460,7 +462,7 @@ app.get("/", (req, res) => {
       { name: "Couverts", meals: [] },
     ],
   });
-});
+}); */
 
 const PORT = 3001;
 app.listen(PORT, () => {
